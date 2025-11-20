@@ -1,0 +1,5 @@
+.DS_Store
+.clasp.json
+service-account-key.json
+
+_config_ids_local.gs
