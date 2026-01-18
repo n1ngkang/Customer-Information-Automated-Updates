@@ -2,6 +2,10 @@
 ## Executive Summary
 This project establishes a cross-platform, fully automated data pipeline designed to process complex customer update requests. It integrates Python with GAS to ensure zero manual data handling during the reconciliation of sensitive information. 
 The system successfully integrates complex business validation logic that was previously prone to human error, achieving complete automation while maintaining a critical human review checkpoint for final data verification.
+## Project Structure
+1. [categorize.js](./categorize.js) - Data Categorization (Excel): Initial records are categorized and prepared in a local Excel environment to define the scope of work.
+2. [auto_info_updates.ipynb](./auto_info_updates.ipynb) - Automated Processing (Python): The Python engine reads the Excel data, performs updates, and handles data transformation logic.
+3. [check.js](./check.js) - Synchronized Validation (Excel): Automates the synchronization of the Master Sheet by detecting manual check-box validations from the local Excel file to ensure cross-platform data consistency.
 ## Core Technical Contributions
 ### End-to-End Automation & Integrated Workflow
 * Full Automation: The entire workflow—from reading raw input requests to distributing finalized data and outputting check logs—is fully automated, significantly reducing the opportunity for human error in complex data entry and reconciliation tasks.
